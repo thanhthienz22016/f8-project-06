@@ -2,7 +2,17 @@
 ::before,
 ::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+:root {
+    --primary-color: #5D3BEE;
+    --heading-color: #080415;
+    --text-color: #51586A;
+    --bg-color: #FBFAFF;
+    --bg-white: #fff;
+    --color-white: #FDFDFD;
 }
 
 html,
@@ -19,10 +29,21 @@ body {
     font-family: 'DM Sans 18pt', sans-serif;
 }
 
-h1 {
-    color: #080415;
-    font-size: 8rem;
+/* Common */
+a {
+    text-decoration: none;
+}
+
+.heading {
+    color: var(--heading-color);
+    font-size: 3.6rem;
     font-weight: 500;
-    line-height: 0.95;
-    letter-spacing: -3.2px;
+    line-height: 1.16;
+    letter-spacing: -1.44px;
+}
+
+.desc {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    line-height: 1.62;
 }
