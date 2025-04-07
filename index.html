@@ -48,45 +48,80 @@
 <body>
     <header class="header header-fixed">
         <nav class="header__wapper">
-            <img class="header__logo" src="./assets/images/logo-pixar-style.png" alt="Logo Nguyen Thanh Thien">
+            <a href="#!"> <img class="header__logo" src="./assets/images/logo-pixar-style.png"
+                    alt="Logo Nguyen Thanh Thien"></a>
 
             <div class="header__wapper-icon">
                 <div class="header__mail">
-                    <span class="header__mail-text">
-                        hi@arif.interactive
-                    </span>
+                    <a href="mailto:Hi@nguyenthanhthien.com">
+                        <span class="header__mail-text">
+                            hi@nguyenthanhthien.com
+                        </span>
+                    </a>
                     <div class="header__icon-wapper"><img src="./assets/icon/mail-icon.svg" alt="Mail icon"
                             class="header__icon"></div>
                 </div>
 
-                <div class="header__menu-icon">
+                <label for="menu-active" class="header__menu-icon">
                     <div class="header__shape-menu"></div>
                     <div class="header__shape-menu"></div>
-                </div>
+                </label>
             </div>
 
             <div class="header__menu">
                 <ul class="header__menu--list">
                     <li>
-                        <a class="header__menu--item" href="#!">Projects</a>
+                        <a class="header__menu--item" href="#project">Projects</a>
                     </li>
                     <li>
-                        <a class="header__menu--item" href="#!">Journey</a>
+                        <a class="header__menu--item" href="#journey">Journey</a>
                     </li>
                     <li>
-                        <a class="header__menu--item" href="#!">Service</a>
+                        <a class="header__menu--item" href="#service">Service</a>
                     </li>
                     <li>
-                        <a class="header__menu--item" href="#!">Contact</a>
+                        <a class="header__menu--item" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
 
         </nav>
     </header>
-    <main style="height: 5000px;">
+
+    <header class="header__menu--toggle">
+        <input type="checkbox" name="menu-mobile" id="menu-active">
+        <label for="menu-active" class="header__menu--overlay"></label>
+        <div class="header__menu--active">
+            <a href="#!">
+                <img src="./assets/images/logo-pixar-style.png" alt="Logo mobile" class="header__logo">
+            </a>
+            <ul class="header__menu--list-mobile">
+                <li>
+                    <a href="#project" class="header__menu--item-mobile">
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="#journey" class="header__menu--item-mobile">
+                        Journey
+                    </a>
+                </li>
+                <li>
+                    <a href="#service" class="header__menu--item-mobile">
+                        Service
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="header__menu--item-mobile">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
         <!-- Hero section -->
-        <section class="hero">
+        <section class="hero" id="hero-section">
             <div class="container">
                 <div class="hero__wapper">
                     <div class="row hero__row">
@@ -168,7 +203,7 @@
         </section>
 
         <!-- Client -->
-        <section class="client">
+        <section class="client" id="client">
             <div class="container">
                 <div class="row client__row">
                     <div class="col col-12 col-lg-3 offset-lg-1">
@@ -270,16 +305,10 @@
 
                     <div class="row">
                         <div class="col-12">
-                            <div class="spec__dot">
-                                <span class="spec__dots-item">
-                                    <div class="spec__dots-inner"></div>
-                                </span>
-                                <span class="spec__dots-item active">
-                                    <div class="spec__dots-inner"></div>
-                                </span>
-                                <span class="spec__dots-item">
-                                    <div class="spec__dots-inner"></div>
-                                </span>
+                            <div class="says__dots spec__dots">
+                                <span class="says__dot"></span>
+                                <span class="says__dot active"></span>
+                                <span class="says__dot"></span>
                             </div>
                         </div>
                     </div>
@@ -288,15 +317,14 @@
         </section>
 
         <!-- Project -->
-        <section class="project">
+        <section class="project" id="project">
             <div class="container">
                 <div class="row">
                     <div class="col">
                         <div class="project__wapper">
                             <div class="project__header">
                                 <h2 class="heading project__heading">
-                                    Take a look at
-                                    my recent projects
+                                    Take a look at <span class="project__white--space">my recent projects</span>
                                 </h2>
                                 <p class="desc project__desc">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt
@@ -394,6 +422,344 @@
                 </div>
             </div>
         </section>
+
+        <!-- Hey -->
+        <section class="hey" id="journey">
+            <div class="container">
+                <div class="hey__wapper">
+                    <div class="row">
+                        <div class="col col-12">
+                            <section class="hey__header">
+                                <span class="heading hey__span">
+                                    Hey,,,,It’s Arif
+                                </span>
+                                <h2 class="heading hey__heading">
+                                    Interactive Designer
+                                </h2>
+                                <p class="desc hey__desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt
+                                    ut
+                                    elementum turpis.
+                                </p>
+                            </section>
+                        </div>
+
+                        <div class="col col-12">
+                            <div class="hey__authen">
+                                <div class="hey__authen--block">
+                                    <span class="hey__authen--number">
+                                        21+
+                                    </span>
+                                    <span class="hey__authen--text">
+                                        Features & Awards
+                                    </span>
+                                </div>
+
+                                <div class="hey__authen--block">
+                                    <span class="hey__authen--number">
+                                        08+
+                                    </span>
+                                    <span class="hey__authen--text">
+                                        Years Experience
+                                    </span>
+                                </div>
+
+                                <div class="hey__authen--block">
+                                    <span class="hey__authen--number">
+                                        97%
+                                    </span>
+                                    <span class="hey__authen--text">
+                                        Clients Rating
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-12">
+                            <div class="hey__video">
+                                <div class="hey__btn--play">
+                                    <img src="./assets/icon/icon-play.svg" alt="Play icon" class="hey__btn--img">
+                                </div>
+
+                                <div class="hey__itro--video">
+                                    <p class="hey__intro--text">
+                                        Intro Video
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- says -->
+        <section class="says" id="service">
+            <div class="container">
+                <div class="says__wapper">
+                    <div class="row">
+                        <div class="col col-12">
+                            <div class="says__header">
+                                <h2 class="heading says__heading">
+                                    What people says
+                                </h2>
+                                <p class="desc says__desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt
+                                    ut
+                                    elementum turpis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col col-12">
+                            <div class="says__inner">
+                                <div class="says__inner--block">
+                                    <p class="says__review">
+                                        “Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                        culpa.”
+                                    </p>
+                                    <div class="says__people">
+                                        <img src="./assets/icon/thumb-says.png" alt="Thumnail client review"
+                                            class="says__thumb">
+                                        <div class="says__client">
+                                            Joe Elia
+                                        </div>
+                                    </div>
+
+                                    <div class="says__position-name">
+                                        User Interface Design at PCL Lab
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="says__dots">
+                                <span class="says__dot"></span>
+                                <span class="says__dot"></span>
+                                <span class="says__dot active"></span>
+                                <span class="says__dot"></span>
+                                <span class="says__dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq">
+            <div class="container">
+                <div class="faq__wapper">
+                    <div class="row">
+                        <div class="col">
+                            <section class="faq__header">
+                                <h2 class="heading faq__heading">
+                                    A few questions
+                                    clients normally ask me
+                                </h2>
+                            </section>
+
+                            <div class="faq__accordion">
+                                <input type="radio" name="faq" id="faq-1" checked>
+                                <input type="radio" name="faq" id="faq-2">
+                                <input type="radio" name="faq" id="faq-3">
+                                <input type="radio" name="faq" id="faq-4">
+                                <input type="radio" name="faq" id="faq-5">
+                                <!-- FAQ 1 -->
+                                <div class="faq__accordion--block">
+                                    <label for="faq-1" class="faq__accordion--heading">
+                                        <h3>
+                                            What is your hourly rate?
+                                        </h3>
+                                        <span class="faq__accordion--icon"></span>
+                                    </label>
+                                    <p class="desc faq__accordion--content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl
+                                        tincidunt
+                                        ut elementum turpis.
+                                    </p>
+                                </div>
+                                <!-- FAQ 2 -->
+                                <div class="faq__accordion--block">
+                                    <label for="faq-2" class="faq__accordion--heading">
+                                        <h3>
+                                            What type of projects do you take on?
+                                        </h3>
+                                        <span class="faq__accordion--icon"></span>
+                                    </label>
+                                    <p class="desc faq__accordion--content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl
+                                        tincidunt
+                                        ut elementum turpis.
+                                    </p>
+                                </div>
+                                <!-- FAQ 3 -->
+                                <div class="faq__accordion--block">
+                                    <label for="faq-3" class="faq__accordion--heading">
+                                        <h3>
+                                            What type of projects do you take on?
+                                        </h3>
+                                        <span class="faq__accordion--icon"></span>
+                                    </label>
+                                    <p class="desc faq__accordion--content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl
+                                        tincidunt
+                                        ut elementum turpis.
+                                    </p>
+                                </div>
+                                <!-- FAQ 4 -->
+                                <div class="faq__accordion--block">
+                                    <label for="faq-4" class="faq__accordion--heading">
+                                        <h3>
+                                            What time-zone do you work in?
+                                        </h3>
+                                        <span class="faq__accordion--icon"></span>
+                                    </label>
+                                    <p class="desc faq__accordion--content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl
+                                        tincidunt ut elementum turpis.
+                                    </p>
+                                </div>
+                                <!-- FAQ 5 -->
+                                <div class="faq__accordion--block">
+                                    <label for="faq-5" class="faq__accordion--heading">
+                                        <h3>
+                                            How often can we communicate?
+                                        </h3>
+                                        <span class="faq__accordion--icon"></span>
+                                    </label>
+                                    <p class="desc faq__accordion--content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl
+                                        tincidunt ut elementum turpis.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ATM -->
+        <section class="atm">
+            <div class="container">
+                <div class="atm__wrapper">
+                    <div class="row">
+                        <div class="col col-12">
+                            <section class="atm__header">
+                                <h2 class="heading atm__heading">
+                                    My atmosphere
+                                </h2>
+                                <p class="desc atm__desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt
+                                    ut
+                                    elementum turpis.
+                                </p>
+
+                                <span class="atm__mail">
+                                    @interaction_arif
+                                </span>
+                            </section>
+
+                            <div class="atm__slider">
+                                <figure class="atm__image">
+                                    <img src="./assets/images/image-slide-02.png" alt="My atmosphere" class="atm__img">
+                                </figure>
+                                <figure class="atm__image">
+                                    <img src="./assets/images/image-slide-01.png" alt="My atmosphere" class="atm__img">
+                                </figure>
+                                <figure class="atm__image">
+                                    <img src="./assets/images/image-slide-03.png" alt="My atmosphere" class="atm__img">
+                                </figure>
+                            </div>
+
+                            <div class="atm__dots">
+                                <div class="atm__dot"></div>
+                                <div class="atm__dot"></div>
+                                <div class="atm__dot active"></div>
+                                <div class="atm__dot"></div>
+                                <div class="atm__dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Got -->
+        <section class="got" id="contact">
+            <div class="container">
+                <div class="got__wrapper">
+                    <div class="row">
+                        <div class="col">
+                            <section class="got__header">
+                                <h2 class="heading got__heading">
+                                    Got a project? Let’s talk
+                                </h2>
+                                <p class="desc got__desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
+
+                                <a href="#!" class="got__cta">
+                                    Book a Call
+                                </a>
+
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__wrapper">
+
+                <div class="footer__inner">
+                    <img src="./assets/images/logo-pixar-style.png" alt="Logo footer" class="footer__logo">
+
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#!" class="footer__item">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="footer__item">Journey</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="footer__item">Service</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="footer__item">Contact</a>
+                        </li>
+                    </ul>
+
+                    <!-- Mail Footer -->
+                    <a class="footer__order" href="mailto:Hi@nguyenthanhthien.com">
+                        <div class="footer__mail">
+                            <span class="footer__mail-text">
+                                hi@nguyenthanhthien.com
+                            </span>
+                            <div class="footer__icon-wapper"><img src="./assets/icon/mail-icon.svg" alt="Mail icon"
+                                    class="footer__icon"></div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="footer__copy">
+                    <ul class="footer__copy--list">
+                        <li><a href="#!" class="footer__copy--item">Privacy Policy</a></li>
+                        <li><a href="#!" class="footer__copy--item">Terms of Conditions</a></li>
+                    </ul>
+
+                    <p class="copy__text">
+                        ©interactiveArif 2021. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
 
     </main>
 </body>
